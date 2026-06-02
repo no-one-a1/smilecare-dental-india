@@ -82,7 +82,7 @@
                                     </form>
                                 {:else}
                                     <button onclick={() => triggerCancellationFlow(record.id)} class="drop-action" title="Verify ownership to cancel">✕ Request Cancellation</button>
-                                lock}
+                                {/if}
                             </div>
                         {/each}
                     </div>
