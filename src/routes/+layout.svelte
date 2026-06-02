@@ -1,6 +1,7 @@
 <script lang="ts">
-    import '../app.css'; // Your global stylesheet variable reference
-    let isMobileMenuOpen = $state(false);
+    import '../app.html'; // Your global stylesheet variable reference
+    let { children } = $props();
+	let isMobileMenuOpen = $state(false);
 
     function toggleMenu() {
         isMobileMenuOpen = !isMobileMenuOpen;
@@ -40,7 +41,7 @@
 </header>
 
 <main class="page-body-wrapper">
-    <slot />
+    {@render children?.()}
 </main>
 
 <style>

@@ -3,7 +3,6 @@
     import { dentalDB } from '../lib/core/db.svelte';
     import BookingForm from '../lib/ui/BookingForm.svelte';
     import TechShowcase from '../lib/ui/TechShowcase.svelte';
-    import TokenQueue from '$lib/ui/TokenQueue.svelte';
 
     // Interactive Verification UI State management hooks
     let activePromptId = $state<string | null>(null);
