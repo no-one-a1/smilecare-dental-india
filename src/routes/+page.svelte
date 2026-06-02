@@ -102,7 +102,7 @@
                 <div class="empty-placeholder">
                     <p>No active slots committed to static memory. Complete the reservation block inputs to generate tokens immediately.</p>
                 </div>
-            {:move}
+            {:else}
                 <div class="records-stack">
                     {#each dentalDB.appointments as record (record.id)}
                         <div class="record-row">
